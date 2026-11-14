@@ -1,222 +1,206 @@
-1.1
-// console.log("Hello, World!");
+// let customerList = [
+//     {
+//         name: "John Doe",
+//         address: "123 Main St",
+//         phone: "555-1234",
+//         item: "Widget A"[
+
+//         ]
+//     },
+//     {
+//         name: "Jane Smith",
+//         email: "jane@example.com",
+//         address: "456 Elm St",
+
+//     }
+
+// ]
+
+// console.log(customerList);
+
+// let customerList = [];
+// function btnAddCustoemrOnAction() {
+//     let name = document.getElementById("txtName").value;
+//     let address = document.getElementById("txtAddress").value;
+//     let phone = document.getElementById("txtPhone").value;
+//     let email = document.getElementById("txtEmail").value;
+
+//     console.log(name, address, phone, email);
+
+//     let customer = {
+//         name: name,
+//         address: address,
+//         phone: phone,
+//         email: email
+//     }
+//     console.log(customer);
+//     customerList.push(customer);
+//     console.log(customerList);
+//     btnLoadTableOnAction();
+// }
+
+// function btnLoadTableOnAction() {
+//     let tblCustomer = document.getElementById("tblCustomer");
+
+//     let body = "";
+//     for (let i = 0; i < customerList.length; i++) {
+//         body += `<tr>
+//                     <td>${customerList[i].name}</td>
+//                     <td>${customerList[i].address}</td>
+//                     <td>${customerList[i].phone}</td>
+//                     <td>${customerList[i].email}</td>
+//                 </tr>`;
+//     }
+//     tblCustomer.innerHTML = body;
 
 
-//  let customers = ["John Doe", "Jane Smith", "Alice Johnson", "Bob Brown"];
-//  console.log(customers);
+
+// }
 
 
-//------------------------------------------------------------------------------------------
- 
+// let studentList = [
+//     {
+//         name: "kamal kumar",
+//         age: 20,
+//     },
+//     {
+//         name: "sita devi",
+//         age:22
+//     },
+//     {
+//         name: "ram kumar",
+//         age: 21
+//     }
+// ]
 
-1.2
-//----------------------------do not use this code in production-----------------------------
+// console.log(studentList[2].name);
 
-// class Customer {
-//     name;
-//     age;
-//     address;
+3.
 
-//     constructor(name, age, address) {
-//         this.name = name;
-//         this.age = age;
-//         this.address = address;
+// let y = Math.floor(Math.random() * 10) + 1;
+// console.log(y);
+
+// function btnSubmitGuessOnAction() {
+//     let userGuess = document.getElementById("txtGuess").value
+
+//     if (userGuess == y) {
+//         Swal.fire({
+//             title: "Congratulations!",
+//             width: 600,
+//             padding: "3em",
+//             color: "#716add",
+//             background: "#fff url('https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cTVudG8xenVwZTJ3MW53dXd4MHF4ZjFueGhhcGZhaHh1cXFqajV2YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l3q2Z6S6n38zjPswo/giphy.gif')",
+//             backdrop: `
+//     rgba(0,0,123,0.4)
+//     url("/images/nyan-cat.gif")
+//     left top
+//     no-repeat
+//   `
+//         });
+//     } else if (userGuess > y) {
+//         guess++;
+//         alert("Your guess is too high! Try again.");
+//     } else {
+//         guess++;
+//         alert("Your guess is too low! Try again.");
 //     }
 
 // }
 
-// let customer1 = new Customer("John Doe", 30, "123 Main St, Anytown, USA");
-// let customer2 = new Customer("Jane Smith", 25, "456 Elm St, Othertown, USA");
-
-// console.log(customer1);
-// console.log(customer2);
-
-//------------------------------------------------------------------------------------------
 
 
-1.3
-// let customers = {
-//     name: "John Doe",
-//     age: 30,
-//     address: "123 Main St, Anytown, USA"   
+//-------------------------------------------Constants----------------------------------------------
 
-// }
-
-// console.log(customers);
+4.
+//   let custoemr = ["saman", "kamal", "sita", "ram"];
+//   console.log(custoemr);
+//   console.log(custoemr);
 
 
 
-// let CustomerList = [
-//     {
-//         name: "Saman Kumara",
-//         age: 30,
-//         address:"Colombo, Sri Lanka",
-//         items: [
-//             {
-//                 itemName: "Laptop",
-//                 itemPrice: 1000
-//             },
-//             {
-//                 itemName: "Mouse",
-//                 itemPrice: 20
-//             }
-//         ]
-//     },
-//     {
-//         name: "Nimal Perera",
-//         age: 20,
-//         address:"Kandy, Sri Lanka"
-//     },
-//     {
-//         name: "Sunil Silva",
-//         age: 25,
-//         address:"Galle, Sri Lanka"
-//     },
-//     {
-//         name: "Rajitha Fernando",
-//         age: 30,
-//         address:"Matara, Sri Lanka"
-//     },
-//     {
-//         name: "Samantha Perera",
-//         age: 35,
-//         address:"Colombo, Sri Lanka"
-//     },
-//     {   name: "Niroshan Silva",
-//         age: 40,
-//         address:"Kandy, Sri Lanka"}
+5.
+//------------------------------------------arrylist------------------------------------------------
+
+5.1
+//-----------------------------------push and reverse methods---------------------------------------
+
+const customerList = [];
+
+customerList.push(1);
+customerList.push(2);
+customerList.push(3);
+customerList.push(4);
+customerList.push(5);
+
+
+console.log(customerList);
+customerList.reverse();
+console.log(customerList);
+
+
+6.
+//-----------------------------------------Filter method---------------------------------------------
+
+// const productList = [
+//     { name: "bun", inStock: true, price: 10 },
+//     { name: "bread", inStock: false, price: 20 },
+//     { name: "cake", inStock: true, price: 30 },
+//     { name: "cookie", inStock: true, price: 40 },
+//     { name: "donut", inStock: false, price: 50 }
+
 // ]
 
-// console.log(CustomerList);
-// console.log(CustomerList[0].items[0].itemName);
-
-
-2.1
-// -----------------------------------(DOM - Document Object Model)-----------------------------------
-
-// console.log(document);
-
-// document.write("<h1>Hello World</h1>");
-// document.write("<h2>Hello World</h2>");
-
-
-
-// let number = 0;
-// function btnClickMeOnAction(){
-
-//     title.innerText = "Saman Kumara - " + number++;
-// }
-
-// -- Number Count APP -- 
-
-// let number = 0;
-// function btnIncrementOnAction(){
-//   number++;
-//   numberCount.innerText = "Number Count - " +number;
-// }
-
-// function btnDecrementOnAction(){
-//    number--;
-//    numberCount.innerText = "Number Count - " +number;
+// let inStockProductList = productList.filter(function (product) {
+//     return productFilter(product);
 
 // }
 
-
-// function btnResetOnAction(){
-//     let txtName = document.getElementById("txtName");
-//     console.log(txtName.value);
-//     submitedName.innerText = "My Name is - " + txtName.value;
-
+// );
+// function productFilter(product) {
+//     return product.inStock === true;
 // }
 
-// function btnAddOnAction() {
-//     let inputnum1 =document.getElementById("txtNum1").value;
-//     let inputnum2 =document.getElementById("txtNum2").value;
-
-//     let result = parseInt(inputnum1) + parseInt(inputnum2);
-//     outPut.innerText = "Result is - " + result;
+// console.log(inStockProductList);
 
 
-// }
+// const leterList = ["a", "b", "c", "d", "e", "f", "g"]
+// console.log(leterList);
 
-// function btnSubtractOnAction() {
-//    let inputnum1 =document.getElementById("txtNum1").value;
-//     let inputnum2 =document.getElementById("txtNum2").value;
-
-//     let result = parseInt(inputnum1) - parseInt(inputnum2);
-//     outPut.innerText = "Result is - " + result;
+// leterList.sort();
+// console.log(leterList);
 
 
-// }
+7.
+
+//----------------------------------------Map Method---------------------------------------------------
+
+
+// const  salaryList = [100, 200, 300, 400, 500];
+// cosole.log(salaryList);
+
+// let newSalaryList = salaryList.map (salary=> salary * 2);
+// console.log(newSalaryList);
+
+
+
+7.
+
+//------------------------------------------find Method------------------------------------------------
+
+// const studentList = [
+//     { name: "kamal", age: 20 },
+//     { name: "nuwan", age: 22 }, 
+//     { name: "Bob", age: 21 }
+
+// ]
+
+// let student = studentList.find(student => student.name === "Jane");
+// console.log(student);
 
 
 
 
-// -----------------------------------Customer Form Appp---------------------------------
 
 
-// let customerList = [];
-// function btnSubmitOnAction() {
-
-//     let txtName = document.getElementById("txtName").value;
-//     let txtAddress = document.getElementById("txtAddress").value;
-//     let txtAge = document.getElementById("txtAge").value;
-//     let txtEmail = document.getElementById("txtEmail").value;
-//     let txtSalary = document.getElementById("txtSalary").value;
-
-//    let customer = {
-//          name:txtName,
-//          address:txtAddress,
-//          age:txtAge,
-//          email:txtEmail,
-//          salary:txtSalary
-//    }
-//    console.log(customer);
-//    customerList.push(customer);
-//    console.log(customerList);
-//    btnLoadTableOnAction();
-//    resetInputFields();
-// }
-// function btnLoadTableOnAction(){
-//    let tblCustomer = document.getElementById("tblCustomer");
-
-//    tblCustomer.innerHTML += `
-//         <tr>
-//             <td>Saman</td>
-//             <td>Colombo</td>
-//             <td>25</td>
-//             <td>saman@example.com</td>
-//             <td>50000</td>
-//         </tr>
-//    `
-// }
 
 
-// function btnLoadTableOnAction() {
-//      let tblCustomer = document.getElementById("tblCustomer");
-
-//      let body = "";
-
-//      for (let i = 0; i < customerList.length; i++) {
-//             body += `
-//         <tr>
-//             <td>${customerList[i].name}</td>
-//             <td>${customerList[i].address}</td>
-//             <td>${customerList[i].age}</td>
-//             <td>${customerList[i].email}</td>
-//             <td>${customerList[i].salary}</td>
-//          </tr>
-//        `
-//      }
-//      tblCustomer.innerHTML = body;
-
-
-// }
-
-// function resetInputFields() {
-//     document.getElementById("txtName").value = "";
-//     document.getElementById("txtAddress").value = "";
-//     document.getElementById("txtAge").value = "";
-//     document.getElementById("txtEmail").value = "";
-//     document.getElementById("txtSalary").value = "";
-// }
