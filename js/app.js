@@ -200,7 +200,23 @@ console.log(customerList);
 
 
 
+7.
 
+//-------------------------------JSON - JavaScript Object Notation---------------------------------------
 
+fetch("https://jsonplaceholder.typicode.com/users").then(response => response.json()).then(data => {
+    console.log(data);
+
+    let tblbody = "";
+
+    data.forEach(element => {
+        tblbody += `<tr>
+            <td>${element.id}</td>
+            <td>${element.title}</td>
+            <td>${element.userId}</td>
+        </tr>`;
+    });
+    tblCustomer.innerHTML = tblbody;
+});
 
 
