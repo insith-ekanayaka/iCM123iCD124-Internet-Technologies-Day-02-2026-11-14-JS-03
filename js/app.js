@@ -204,19 +204,40 @@ console.log(customerList);
 
 //-------------------------------JSON - JavaScript Object Notation---------------------------------------
 
-fetch("https://jsonplaceholder.typicode.com/users").then(response => response.json()).then(data => {
+// fetch("https://jsonplaceholder.typicode.com/users").then(response => response.json()).then(data => {
+//     console.log(data);
+
+//     let tblbody = "";
+
+//     data.forEach(element => {
+//         tblbody += `<tr>
+//             <td>${element.id}</td>
+//             <td>${element.title}</td>
+//             <td>${element.userId}</td>
+//         </tr>`;
+//     });
+//     tblCustomer.innerHTML = tblbody;
+// });
+
+
+fetch("https://jsonplaceholder.typicode.com/posts/").then(response => response.json()).then(data => {
     console.log(data);
+
+    let table = document.getElementById("tblCustomer");
+    
 
     let tblbody = "";
 
     data.forEach(element => {
-        tblbody += `<tr>
-            <td>${element.id}</td>
-            <td>${element.title}</td>
-            <td>${element.userId}</td>
-        </tr>`;
+        tblbody += `
+            <tr>
+             <td>${element.id}</td>
+             <td>${element.title}</td>
+             <td>${element.userId}</td>
+            </tr>
+        `
     });
-    tblCustomer.innerHTML = tblbody;
+    table.innerHTML = tblbody;
 });
 
 
